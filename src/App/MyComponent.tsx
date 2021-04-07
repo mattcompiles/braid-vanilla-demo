@@ -1,4 +1,3 @@
-/* eslint-disable arrow-body-style */
 import { Box, Heading } from 'braid-design-system';
 import { BackgroundProvider, Text } from 'braid-design-system';
 import React from 'react';
@@ -6,7 +5,7 @@ import { useStyles } from 'sku/react-treat';
 
 import * as styleRefs from './MyStyle.treat';
 
-export default () => {
+export default function MyComponent() {
   const styles = useStyles(styleRefs);
 
   return (
@@ -24,4 +23,4 @@ export default () => {
       </Box>
     </Box>
   );
-};
+}
