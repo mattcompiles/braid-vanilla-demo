@@ -1,0 +1,32 @@
+{
+  "name": "braid-vanilla",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "sku start",
+    "test": "sku test",
+    "build": "sku build",
+    "serve": "sku serve",
+    "lint": "sku lint",
+    "format": "sku format"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "sku pre-commit"
+    }
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^0.1.0",
+    "@vanilla-extract/css-utils": "^0.1.0",
+    "braid-design-system": "seek-oss/braid-design-system#660efeae",
+    "classnames": "^2.3.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sku": "10.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "husky": "^5.2.0"
+  }
+}
