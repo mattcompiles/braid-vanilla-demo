@@ -4,7 +4,7 @@ import { Banner } from './Banner';
 export function App() {
   return (
     <>
-      <Banner>🧁 welcome to vanilla-extract</Banner>
+      <Banner variant="secondary">🧁 welcome to vanilla-extract</Banner>
     </>
   );
 }
