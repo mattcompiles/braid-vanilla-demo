@@ -1,13 +1,11 @@
 import { Box, Heading } from 'braid-design-system';
 import { BackgroundProvider, Text } from 'braid-design-system';
 import React from 'react';
-import { useStyles } from 'sku/react-treat';
 
-import * as styleRefs from './MyStyle.treat';
+import * as styles from './MyStyle.css';
+import ThemedComponent from './ThemedComponent';
 
 export default function MyComponent() {
-  const styles = useStyles(styleRefs);
-
   return (
     <Box className={styles.customPadding}>
       <Box padding="large" className={styles.gradientBackground}>
@@ -15,11 +13,9 @@ export default function MyComponent() {
           <Heading level="1">🧁 vanilla-extract</Heading>
         </BackgroundProvider>
       </Box>
-      <Box
-        padding={['small', 'large', 'xlarge']}
-        className={styles.responsiveBorder}
-      >
+      <Box className={styles.customBox}>
         <Text>Custom box</Text>
+        <ThemedComponent />
       </Box>
     </Box>
   );

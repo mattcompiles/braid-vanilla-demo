@@ -3,5 +3,5 @@ module.exports = {
   renderEntry: 'src/render.tsx',
   sites: [{ name: 'apac', host: 'dev.apac.com' }],
   publicPath: '/path/to/public/assets/', // <-- Required for sku build output
-  orderImports: true,
+  orderImports: false,
 };
