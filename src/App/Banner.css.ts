@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
-export const root = style({
+export const banner = style({
   background: 'blue',
   color: 'pink',
   padding: 42,
