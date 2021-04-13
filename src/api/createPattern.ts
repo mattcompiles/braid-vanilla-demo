@@ -2,7 +2,7 @@ import mapValues from 'lodash/mapValues';
 import { style, mapToStyles } from '@vanilla-extract/css';
 import { StitchesOptions, StitchesResult, VariantGroups } from './types';
 
-export default function createPattern<Variants extends VariantGroups>(
+export function createPattern<Variants extends VariantGroups>(
   options: StitchesOptions<Variants>,
 ): StitchesResult<Variants> {
   const { variants, defaultVariants, compoundVariants = [], ...rest } = options;
