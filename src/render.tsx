@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import type { Render } from 'sku';
-
-import App from './App/App';
+import { ClientContext } from './types';
+import { App } from './App/App';
 
 interface RenderContext {
   appHtml: string;
